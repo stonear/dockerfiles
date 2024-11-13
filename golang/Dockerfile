@@ -3,7 +3,8 @@ FROM golang:alpine
 RUN \
     apk update && \
     apk --no-cache add curl && \
-    apk add --no-cache make && \
+    apk --no-cache add git && \
+    apk --no-cache add make && \
     apk --no-cache add rsync && \
     rm -rf /var/cache/apk/*
 
